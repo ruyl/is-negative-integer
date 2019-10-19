@@ -1,4 +1,4 @@
-# is-negative-integer 
+# is-negative-integer [![Build Status](https://travis-ci.org/ruyl/is-negative-integer.svg?branch=master)](https://travis-ci.org/ruyl/is-negative-integer) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
 Check if a number is a negative integer (forked from https://www.npmjs.com/package/is-positive-integer)
 
 # Installation

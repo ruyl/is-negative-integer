@@ -20,7 +20,7 @@ describe('is-negative-integer', function () {
     expect(isNegativeInteger(-90071992555)).to.equal(true)
     expect(isNegativeInteger(-999999999999)).to.equal(true)
     expect(isNegativeInteger(MIN_SAFE_INTEGER)).to.equal(true)
-    expect(isNegativeInteger(Number.MIN_VALUE)).to.equal(true)
+    expect(isNegativeInteger(Number.MIN_VALUE)).to.equal(false)
     expect(isNegativeInteger(new Number(-12))).to.equal(true)
     done()
   })

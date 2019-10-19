@@ -1,5 +1,5 @@
 # is-negative-integer 
-Check if a number is a negative integer (forke from https://www.npmjs.com/package/is-positive-integer)
+Check if a number is a negative integer (forked from https://www.npmjs.com/package/is-positive-integer)
 
 # Installation
 ```bash

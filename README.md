@@ -1,6 +1,6 @@
 # is-negative-integer 
 
-[comment]: # ([![Build Status] (https://travis-ci.org/tjmehta/is-positive-integer.svg?branch=master)](https://travis-ci.org/tjmehta/is-positive-integer) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/))
+[//]: # ([![Build Status] (https://travis-ci.org/tjmehta/is-positive-integer.svg?branch=master)](https://travis-ci.org/tjmehta/is-positive-integer) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/))
 check if a number is a negative integer
 
 # Installation

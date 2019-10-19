@@ -1,53 +1,55 @@
-# is-positive-integer [![Build Status](https://travis-ci.org/tjmehta/is-positive-integer.svg?branch=master)](https://travis-ci.org/tjmehta/is-positive-integer) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
-check if a number is a positive integer
+# is-negative-integer 
+
+[comment]: # ([![Build Status] (https://travis-ci.org/tjmehta/is-positive-integer.svg?branch=master)](https://travis-ci.org/tjmehta/is-positive-integer) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/))
+check if a number is a negative integer
 
 # Installation
 ```bash
-npm --save i is-positive-integer
+npm --save i is-negative-integer
 ```
 
 # Usage
 ```js
-var isPositiveInteger = require('is-positive-integer')
+var isNegativeInteger = require('is-negative-integer')
 
-isPositiveInteger(1) // true
-isPositiveInteger(10) // true
-isPositiveInteger(100) // true
-isPositiveInteger(1000) // true
-isPositiveInteger(0) // false
-isPositiveInteger(-1) // false
-isPositiveInteger(-10) // false
-isPositiveInteger(-100) // false
-isPositiveInteger(-1000) // false
-isPositiveInteger(1.1) // false
-isPositiveInteger(10.1) // false
-isPositiveInteger(100.1) // false
-isPositiveInteger(1000.1) // false
-isPositiveInteger(-1.1) // false
-isPositiveInteger(-10.1) // false
-isPositiveInteger(-100.1) // false
-isPositiveInteger(-1000.1) // false
-isPositiveInteger(Infinity) // false
-isPositiveInteger({}) // false
-isPositiveInteger([]) // false
-isPositiveInteger('10') // false
-isPositiveInteger('what') // false
-isPositiveInteger(/what/) // false
-isPositiveInteger(null) // false
+isNegativeInteger(-1) // true
+isNegativeInteger(-10) // true
+isNegativeInteger(-100) // true
+isNegativeInteger(-1000) // true
+isNegativeInteger(0) // false
+isNegativeInteger(1) // false
+isNegativeInteger(10) // false
+isNegativeInteger(100) // false
+isNegativeInteger(1000) // false
+isNegativeInteger(-1.1) // false
+isNegativeInteger(-10.1) // false
+isNegativeInteger(-100.1) // false
+isNegativeInteger(-1000.1) // false
+isNegativeInteger(1.1) // false
+isNegativeInteger(10.1) // false
+isNegativeInteger(100.1) // false
+isNegativeInteger(1000.1) // false
+isNegativeInteger(-Infinity) // false
+isNegativeInteger({}) // false
+isNegativeInteger([]) // false
+isNegativeInteger('-10') // false
+isNegativeInteger('what') // false
+isNegativeInteger(/what/) // false
+isNegativeInteger(null) // false
 // ...
 ```
 
-### isSafePositiveInteger
-Ensure positive integer less than `Number.MAX_SAFE_INTEGER`
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER
+### isSafeNegativeInteger
+Ensure negative integer greater than or equal to `Number.MIN_SAFE_INTEGER`
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_SAFE_INTEGER
 ```js
-var isSafePositiveInteger = require('is-positive-integer').isSafePositiveInteger
-// max safe integer doesn't exist in older engines
-var MAX_SAFE_INTEGER = Number.MAX_SAFE_INTEGER || 9007199254740991
+var isSafeNegativeInteger = require('is-negative-integer').isSafeNegativeInteger
+// min safe integer doesn't exist in older engines
+var MIN_SAFE_INTEGER = Number.MIN_SAFE_INTEGER || 9007199254740991
 
-isSafePositiveInteger(MAX_SAFE_INTEGER) // true
-isSafePositiveInteger(MAX_SAFE_INTEGER + 1) // false
-isSafePositiveInteger(Number.MAX_VALUE) // false
+isSafeNegativeInteger(MIN_SAFE_INTEGER) // true
+isSafeNegativeInteger(MIN_SAFE_INTEGER - 1) // false
+isSafeNegativeInteger(Number.MIN_VALUE) // false
 // ...
 ```
 

@@ -1,6 +1,6 @@
 {
   "name": "is-negative-integer",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "check if a number is a negative integer",
   "main": "index.js",
   "scripts": {
